@@ -1,5 +1,9 @@
 # Streetart experiment
 
+## TODO
+
+Automate the setup process.
+
 ## Backend
 
 The backend is a Drupal site to store stuff and jsonapi for now to expose its data.
