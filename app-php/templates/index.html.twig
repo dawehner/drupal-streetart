@@ -1,0 +1,14 @@
+<html>
+  <head>
+  </head>
+  <body>
+  {% set data = api('/node/streetart', {'query': {'include': 'field_image'}}) %}
+  {% set base_host = baseHost() %}
+  {{ data.data[0].attributes.title }}
+  {% for entry in data.data %}
+    {% set id = entry.relationships.field_image.data.id %}
+    {% set image = filter_field_by_value(data.included, 'id', id) %}
+    {% include 'streetart-single.html.twig' with {'title': entry.attributes.title, 'image_url': image.url  } %}
+  {% endfor %}
+  </body>
+</html>
