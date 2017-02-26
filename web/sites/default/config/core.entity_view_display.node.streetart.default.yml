@@ -1,0 +1,34 @@
+uuid: db532007-f867-4c4e-8d9f-e162db33530d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.streetart.body
+    - field.field.node.streetart.field_image
+    - node.type.streetart
+  module:
+    - image
+    - text
+    - user
+id: node.streetart.default
+targetEntityType: node
+bundle: streetart
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 102
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  links:
+    weight: 100
+hidden: {  }

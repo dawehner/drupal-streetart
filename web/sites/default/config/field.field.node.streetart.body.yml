@@ -1,0 +1,22 @@
+uuid: 3d5831e6-b0a7-4ea2-840a-80fb1515d672
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.streetart
+  module:
+    - text
+id: node.streetart.body
+field_name: body
+entity_type: node
+bundle: streetart
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,26 @@
+uuid: 408a8ab3-6f52-4637-b1c3-b9fd2c68dfd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.streetart.body
+    - node.type.streetart
+  module:
+    - text
+    - user
+id: node.streetart.teaser
+targetEntityType: node
+bundle: streetart
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }

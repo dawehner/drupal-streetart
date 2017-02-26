@@ -1,0 +1,11 @@
+uuid: 2c692db7-c96a-4fd3-b44d-c7aced5eb668
+langcode: en
+status: true
+dependencies: {  }
+name: Streetart
+type: streetart
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
